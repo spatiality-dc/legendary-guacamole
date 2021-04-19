@@ -1,0 +1,708 @@
+.msdi-body {
+  padding: 0;
+  margin: 0;
+  background-color: #0a0a0a;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* Body Things */
+
+.page-content {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #0a0a0a;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  height: 90vh;
+  width: 100vw;
+  background-image: url("../img/banners/AR2021-Home-hero-M.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #0a0a0a;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.center-box {
+  margin-top: auto;
+  width: 50%;
+  padding: 1em;
+}
+
+#navbar {
+  /* Roboto Regular */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+  background-color: #fc6228;
+  z-index: 1;
+  top: 0;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #fc6228;
+  color: #0a0a0a;
+}
+
+#navbar a.active {
+  background-color: #fc6228;
+  color: #fff;
+}
+
+.nav {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 2em;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 3.75rem;
+}
+
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  opacity: 98%;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 1.25rem;
+}
+
+.menu a {
+  padding: 0.5em 0.5em 0.5em 2em;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: end;
+  margin-right: 1em;
+}
+
+.menu a:hover {
+  color: #f1f1f1;
+}
+
+.menu h4:hover,
+.menu a:hover {
+  color: #f1f1f1;
+}
+
+.menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 1em;
+}
+
+.menu hr {
+  background-color: #fff;
+  opacity: 50%;
+  max-width: 95%;
+}
+
+.menu h4 {
+  line-height: 0.8em;
+}
+
+/* Segments */
+
+section {
+  text-align: center;
+}
+
+hr {
+  background-color: #fff;
+  max-width: 80%;
+}
+
+.jumbotron {
+  background-image: url("../img/banners/2020.jpg");
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.intro {
+  font-weight: 300;
+  line-height: 1.2em;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.story-title {
+  font-weight: 500;
+  line-height: 1.2em;
+  color: #fc6228;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+}
+
+.cta {
+  font-weight: 300;
+  line-height: 1.4em;
+  color: #fc6228;
+  padding-bottom: 1em;
+}
+
+.responsive-youtube {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.responsive-youtube iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border: 0;
+}
+
+.responsive-images {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.email-form {
+  text-align: center;
+  height: 33vh;
+  width: 100vw;
+  background-color: #ef3a4b;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.email-form h3 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.email-form .regular-button-white {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*Tiles*/
+
+.tile {
+  width: 30%;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 1em;
+  margin: 1em;
+  text-align: left;
+}
+
+.title {
+  margin-top: 0.2em;
+}
+
+.climate-tile,
+.health-tile,
+.circular-tile,
+.cities-tile,
+.leadership-tile,
+.inclusive-tile,
+.building-tile {
+  color: #fff;
+}
+
+.climate-tile {
+  background: #008a25;
+}
+
+.climate-tile:hover {
+  background: darken(#008a25, 10%);
+}
+
+.health-tile {
+  background: #027eb6;
+}
+
+.health-tile:hover {
+  background: darken(#027eb6, 10%);
+}
+
+.cities-tile {
+  background: #746fb2;
+}
+
+.cities-tile:hover {
+  background: darken(#746fb2, 10%);
+}
+
+.leadership-tile {
+  background: #6f7c4d;
+}
+
+.leadership-tile:hover {
+  background: darken(#6f7c4d, 10%);
+}
+
+.circular-tile {
+  background: #c8008f;
+}
+
+.circular-tile:hover {
+  background: darken(#c8008f, 10%);
+}
+
+.inclusive-tile {
+  background: #d93f00;
+}
+
+.inclusive-tile:hover {
+  background: darken(#d93f00, 10%);
+}
+
+.building-tile {
+  background: #ee0220;
+}
+
+.building-tile:hover {
+  background: darken(#ee0220, 10%);
+}
+
+/* Buttons */
+.btn {
+  display: inline;
+  overflow: auto;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s;
+  margin: 2px;
+  color: white;
+}
+
+.large-button-white {
+  background-color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  cursor: pointer;
+  color: #0a0a0a;
+  font-family: "Roboto", sans-serif;
+  padding: 1.5rem 3.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.large-button-white:hover {
+  background-color: gray;
+  color: #fff;
+}
+.large-button-white:active {
+  position: relative;
+  top: 1px;
+}
+
+.large-button-black {
+  background-color: #0a0a0a;
+  border: 1px solid #0a0a0a;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  padding: 1.5rem 3.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.large-button-black:hover {
+  background-color: gray;
+  color: #0a0a0a;
+}
+.large-button-black:active {
+  position: relative;
+  top: 1px;
+}
+
+.regular-button-white {
+  background-color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  cursor: pointer;
+  color: #0a0a0a;
+  font-family: "Roboto", sans-serif;
+  padding: 0.75rem 3.5rem;
+  text-decoration: none;
+}
+.regular-button-white:hover {
+  background-color: gray;
+  color: #fff;
+}
+.regular-button-white:active {
+  position: relative;
+  top: 1px;
+}
+
+.regular-button-black {
+  background-color: #0a0a0a;
+  border: 1px solid #0a0a0a;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  padding: 0.75rem 3.5rem;
+  text-decoration: none;
+}
+.regular-button-black:hover {
+  background-color: gray;
+  color: #0a0a0a;
+}
+.regular-button-black:active {
+  position: relative;
+  top: 1px;
+}
+
+.btn-menu,
+.btn-download {
+  position: sticky;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+}
+.btn-menu {
+  margin: 0 2em 0 0;
+}
+
+.btn-download {
+  margin: 0 2em 0 -2em;
+}
+
+.download-button {
+  position: absolute;
+  top: 0;
+  right: 18em;
+  padding: 1.5rem 3.5rem;
+  background-color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  cursor: pointer;
+  color: #0a0a0a;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background-color: gray;
+  color: #0a0a0a;
+}
+.download-button:active {
+  top: 1px;
+}
+
+.menu-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 25%;
+  padding: 1.5rem 3.5rem;
+  background-color: #0a0a0a;
+  border: 1px solid #0a0a0a;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.menu-button:hover {
+  background-color: gray;
+  color: #0a0a0a;
+}
+.menu-button:active {
+  top: 1px;
+}
+
+.arrow-button {
+  padding-top: -1em;
+}
+
+/* @Media Calls */
+
+/* Medium devices (tablets, 768px and up to 992px) */
+@media screen and (max-width: 992px) {
+  /* Font things */
+
+  h1 {
+    /* Roboto Black */
+    font-size: 4rem;
+    line-height: 1em;
+  }
+
+  h2 {
+    /* Roboto Black */
+    font-size: 1.75rem;
+    line-height: 1em;
+  }
+
+  h3 {
+    /* Roboto Medium */
+    font-size: 1.25rem;
+    line-height: 1em;
+  }
+
+  h3:first-of-type {
+    line-height: 1em;
+  }
+
+  p {
+    /* Roboto Regular */
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  a {
+    /* Roboto Regular */
+    line-height: 1em;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  /* Segments */
+
+  .intro {
+    /* Roboto Light */
+    line-height: 1em;
+  }
+
+  .form-row {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5em 0em;
+  }
+
+  /* Buttons */
+
+  .large-button-white {
+    padding: 1.125rem 2.5rem;
+  }
+
+  .large-button-black {
+    padding: 1.125rem 2.5rem;
+  }
+
+  .regular-button-white {
+    padding: 0.75rem 2.5rem;
+  }
+
+  .regular-button-black {
+    padding: 0.75rem 2.5rem;
+  }
+
+  .btn-menu {
+    /* position: sticky; */
+    top: 0;
+    right: 20%;
+    display: inline-block;
+    margin-left: 1px;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .btn-download {
+    top: 0;
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-right: 0;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .climate-action h2 {
+    position: relative;
+    padding-top: 1.8rem;
+    margin-left: 3rem;
+    text-align: left;
+  }
+
+  .healthy-communities h2 {
+    position: relative;
+    padding-top: 1.8rem;
+    margin-left: 3rem;
+    text-align: left;
+  }
+
+  .sustainability-transitions h2 {
+    position: relative;
+    padding-top: 1.8rem;
+    margin-left: 3rem;
+    text-align: left;
+  }
+
+  .clean-water h2 {
+    position: relative;
+    padding-top: 1.8rem;
+    margin-left: 3rem;
+    text-align: left;
+  }
+
+  .policy-leadership h2 {
+    position: relative;
+    padding-top: 1.8rem;
+    margin-left: 3rem;
+    text-align: left;
+  }
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 600px) {
+  /* Font things */
+
+  h1 {
+    /* Roboto Black */
+    font-size: 2.5rem;
+    line-height: 1em;
+  }
+
+  h2 {
+    /* Roboto Black */
+    font-size: 1.25rem;
+    line-height: 1em;
+  }
+
+  h3 {
+    /* Roboto Medium */
+    font-size: 1rem;
+    line-height: 1em;
+  }
+
+  p {
+    /* Roboto Regular */
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  a {
+    /* Roboto Regular */
+    line-height: 1em;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  /* Segments */
+
+  .card-1 {
+    height: 33.3vh;
+  }
+
+  .intro {
+    /* Roboto Light */
+    line-height: 1em;
+  }
+
+  form {
+    height: 45vh;
+    background-color: #ef3a4b;
+    color: #fff;
+  }
+
+  .form-row {
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3em 0em;
+  }
+
+  /* Buttons */
+
+  .large-button-white {
+    padding: 1rem 1.5rem;
+  }
+
+  .large-button-black {
+    padding: 1rem 1.5rem;
+  }
+  .regular-button-white {
+    padding: 0.625rem 1.5rem;
+  }
+
+  .regular-button-black {
+    padding: 0.625rem 1.5rem;
+  }
+
+  .btn-menu,
+  .btn-download {
+    position: sticky;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    margin-left: 1px;
+    padding: 0.5rem 1rem;
+  }
+
+  .btn-menu {
+    margin: 2em 2em 0 0;
+  }
+
+  .btn-download {
+    margin: 2em 2em 0 -2em;
+  }
+}
+
+/* Smallest devices (Moto G4phones) */
+@media screen and (max-width: 360px) {
+  form {
+    height: 50vh;
+    background-color: #ef3a4b;
+    color: #fff;
+  }
+
+  .btn-menu,
+  .btn-download {
+    position: relative;
+    top: 0;
+    right: -11%;
+    display: inline-block;
+    margin-left: 1px;
+    padding: 0.375rem 0.75rem;
+  }
+}

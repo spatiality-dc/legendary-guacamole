@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Env Health</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/health.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <div class="msdi-body">
+      <div class="header">
+        <div class="container-fluid">
+          <div id="sideMenu" class="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"
+              ><i class="fas fa-times"></i
+              ></a>
+              <a href="climate.html"><h4>Climate Action</h4></a>
+              <a href="health.html"><h4>Environment and Health</h4></a>
+              <a href="circular.html"><h4>Circular Economy</h4></a>
+              <a href="cities.html"><h4>Cities and Regions</h4></a>
+              <a href="leadership.html"><h4>Leadership for the SDGs</h4></a>
+              <a href="inclusive.html"><h4>Inclusive Prosperity</h4></a>
+              <a href="capacity.html"><h4>Building Capacity and Empowering Leaders</h4></a>
+              <hr />
+              <a href="about-us.html">About Us</a>
+              <a href="awards.html">2020 Awards</a>
+              <a href="publications.html">2020 Reports and Publications</a>
+              <a href="events.html">2020 Events</a>
+              <a href="partners.html">Partners and Funders</a>
+              <a href="team.html">Our Team</a>
+              <a href="#">Contact Us</a>
+              <a href="index.html">Home</a>
+          </div>
+
+          <div class="row justify-content-end">
+            <ul class="nav">
+              <li>
+                <button
+                  class="btn-download regular-button-white"
+                  type="submit"
+                  onclick="window.open('file.doc')"
+                >
+                  <i class="fa fa-download"></i> Download Report
+                </button>
+              </li>
+              <li>
+                  <button class="btn-menu regular-button-black" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i> Menu
+                  </button>
+              </li>
+            </ul>
+          </div>
+          <!--End Button Container-->
+          <div class="row">
+            <div class="col-12 text-center align-center center-box">
+              <h1>
+                Environment and Health
+              </h1>
+              <div class="intro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, officiis.
+              </div>
+            </div>
+            <!--End Column-->
+          </div>
+          <div class="col-sm-0 col-md-0 col-lg-1"></div>
+          <!--End Column-->
+        </div>
+        <!-- End row-->
+      </div>
+      <!--End Header-->
+      <div class="row" id="navbar">
+        <div class="col-sm-0 col-md-0 col-lg-1"></div>
+        <div class="col-sm-12 col-md-12 col-lg-11 col-xl-11"> 
+          <a class="nav-link" href="#LandUseFutures">1. Example One</a>
+          <a class="nav-link" href="#NetZero">2. Example One</a>
+        </div>
+        <div class="col-sm-0 col-md-0 col-lg-1"></div>
+      </div>
+
+      <div class="white-container" id="exampleOne">
+        <div class="row">
+          <div class="col-sm-0 col-md-0 col-lg-1"></div>
+          <div class="col-sm-12 col-md-12 col-lg-11 col-xl-11 story-title">
+            1. Land Use Futures
+          </div>
+        </div>
+        <!--End row-->
+        <div class="row">
+          <div class="col-sm-0 col-md-0 col-lg-1"></div>
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 aside">
+            <!--Open aside-->
+            <h2>
+              How can we sustainably feed a growing population while managing
+              the impacts of climate change?
+            </h2>
+            <div id="cta">
+              <!-- Once a mode has been selected, a specific CTA will be generated here, replacing the default text below-->
+              <p>Are you a funder who's passionate about feeding the world?</p>
+            </div>
+            <button class="cta-button">
+              Get In Touch
+            </button>
+          </div>
+          <!--Close aside-->
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
+            <!--Open article-->
+            <h3>Accelerating global action</h3>
+            <p>
+              Over half of Australia’s land is utilised by agriculture, which
+              contributes significantly to the economy. However, agriculture,
+              forestry and other land uses are responsible for around 12% of
+              Australia’s emissions, and over half of Australia’s water
+              consumption. With global population increasing, the world will
+              need to feed another three billion people by 2050. Without
+              significant shifts in consumption patterns, enormous pressure will
+              be placed on land and oceans – which are already in decline.
+            </p>
+            <p>
+              For Australia to maintain a competitive food and land use sector,
+              meet the needs of future generations and realise economic
+              opportunities, agriculture needs to become more sustainable and
+              resilient. To achieve this, the Land Use Futures program is
+              working with the international Food and Land Use Coalition, a
+              global effort to accelerate action towards sustainable food and
+              land use systems by 2050.
+            </p>
+            <h3>Partnering for impact</h3>
+            <p>
+              In partnership with Deakin University and CSIRO, the Land Use
+              Futures program aims to support the transition to a sustainable
+              food and land use system in Australia. The program takes a
+              participatory approach to problem solving, inviting leaders from
+              the private sector, government, research and community to
+              co-create pathways for a range of possible solutions across
+              dietary shifts, conservation, waste, circular economy and food
+              innovation. These solutions could deliver improvements for the
+              climate, environment, livelihoods, food security and nutrition.
+              The program aligns with the Sustainable Development Goals,
+              particularly Goal #2: Zero hunger.
+            </p>
+            <h3>Natural Capital Summit and Roadmap</h3>
+            <p>
+              In 2019, the Land Use Futures team ran workshops around Australia,
+              to understand the challenges the sector faces. With the support of
+              the Queensland Government and NAB, the team delivered the Natural
+              Capital Summit in Brisbane, where 150 stakeholders were engaged in
+              further discussions. From this, they identified the need for an
+              evidence-based, practical framework for linking financial outcomes
+              and land management practices.
+            </p>
+            <p>
+              Our
+              <a href="https://www.climateworksaustralia.org/" target="_blank"
+                >ClimateWorks</a
+              >
+              team created the
+              <a
+                href="https://www.climateworksaustralia.org/resource/land-use-futures-natural-capital-roadmap/"
+                target="_blank"
+                >Natural Capital Roadmap</a
+              >, which outlines action areas for improving the measurement and
+              valuation of natural capital in Australia. In 2020, the Land Use
+              Futures program also contributed to the Food, Agriculture,
+              Biodiversity, Land-use and Energy Consortium report, Pathways to
+              Sustainable Land-Use and Food Systems. The team also launched the
+              Natural Capital Investment Initiative in partnership with NAB, to
+              help farmers in adopting sustainable and profitable land
+              management practices.
+            </p>
+            <hr />
+            <div class="row stat-captions">
+                150 <span>stakeholders at 6 workshops</span>
+            </div>
+            <div class="row stat-captions">
+            150 <span>stakeholders at Natural Capital Summit</span>
+            </div>
+            <div class="row">
+              <div class="col">
+                <hr />
+                <h4>Links</h4>
+                <p>
+                  <a
+                    href="https://www.climateworksaustralia.org/news/land-use-futures-launches-interactive-website-on-australias-land-use/"
+                    target="_blank"
+                    >&#8594 Explore our interactive roadmap.</a
+                  ><br />
+                  <a
+                    href="https://www.climateworksaustralia.org/project/land-use-futures/"
+                    target="_blank"
+                    >&#8594 Read more about Land Use Futures.</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <hr />
+            <div class="row">
+              <div class="col">
+                <button class="cta-button">
+                  Get In Touch
+                </button>
+              </div>
+              </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+          </div>
+          <!--Close article-->
+        </div>
+        <!--End row-->
+      </div>
+      <!--Close container-->
+
+      <div class="grey-container" id="exampleOne">
+        <div class="row">
+          <div class="col-sm-0 col-md-0 col-lg-1"></div>
+          <div class="col-sm-12 col-md-12 col-lg-11 col-xl-11 story-title">
+            2. Net Zero
+          </div>
+        </div>
+        <!--End row-->
+        <div class="row">
+          <div class="col-sm-0 col-md-0 col-lg-1"></div>
+          <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 aside">
+            <!--Open aside-->
+            <h2>
+              How can we sustainably feed a growing population while managing
+              the impacts of climate change?
+            </h2>
+            <div id="cta">
+              <!-- Once a mode has been selected, a specific CTA will be generated here, replacing the default text below-->
+              <p>Are you a funder who's passionate about feeding the world?</p>
+            </div>
+            <button class="cta-button bottom">
+              Get In Touch
+            </button>
+          </div>
+          <!--Close aside-->
+          <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
+            <!--Open article-->
+            <h3>Accelerating global action</h3>
+            <p>
+              Over half of Australia’s land is utilised by agriculture, which
+              contributes significantly to the economy. However, agriculture,
+              forestry and other land uses are responsible for around 12% of
+              Australia’s emissions, and over half of Australia’s water
+              consumption. With global population increasing, the world will
+              need to feed another three billion people by 2050. Without
+              significant shifts in consumption patterns, enormous pressure will
+              be placed on land and oceans – which are already in decline.
+            </p>
+            <p>
+              For Australia to maintain a competitive food and land use sector,
+              meet the needs of future generations and realise economic
+              opportunities, agriculture needs to become more sustainable and
+              resilient. To achieve this, the Land Use Futures program is
+              working with the international Food and Land Use Coalition, a
+              global effort to accelerate action towards sustainable food and
+              land use systems by 2050.
+            </p>
+            <h3>Partnering for impact</h3>
+            <p>
+              In partnership with Deakin University and CSIRO, the Land Use
+              Futures program aims to support the transition to a sustainable
+              food and land use system in Australia. The program takes a
+              participatory approach to problem solving, inviting leaders from
+              the private sector, government, research and community to
+              co-create pathways for a range of possible solutions across
+              dietary shifts, conservation, waste, circular economy and food
+              innovation. These solutions could deliver improvements for the
+              climate, environment, livelihoods, food security and nutrition.
+              The program aligns with the Sustainable Development Goals,
+              particularly Goal #2: Zero hunger.
+            </p>
+            <h3>Natural Capital Summit and Roadmap</h3>
+            <p>
+              In 2019, the Land Use Futures team ran workshops around Australia,
+              to understand the challenges the sector faces. With the support of
+              the Queensland Government and NAB, the team delivered the Natural
+              Capital Summit in Brisbane, where 150 stakeholders were engaged in
+              further discussions. From this, they identified the need for an
+              evidence-based, practical framework for linking financial outcomes
+              and land management practices.
+            </p>
+            <p>
+              Our
+              <a href="https://www.climateworksaustralia.org/" target="_blank"
+                >ClimateWorks</a
+              >
+              team created the
+              <a
+                href="https://www.climateworksaustralia.org/resource/land-use-futures-natural-capital-roadmap/"
+                target="_blank"
+                >Natural Capital Roadmap</a
+              >, which outlines action areas for improving the measurement and
+              valuation of natural capital in Australia. In 2020, the Land Use
+              Futures program also contributed to the Food, Agriculture,
+              Biodiversity, Land-use and Energy Consortium report, Pathways to
+              Sustainable Land-Use and Food Systems. The team also launched the
+              Natural Capital Investment Initiative in partnership with NAB, to
+              help farmers in adopting sustainable and profitable land
+              management practices.
+            </p>
+            <hr />
+            <div class="row stat-captions">
+                150 <span>stakeholders at 6 workshops</span>
+            </div>
+            <div class="row stat-captions">
+            150 <span>stakeholders at Natural Capital Summit</span>
+            </div>
+            <div class="row">
+              <div class="col">
+                <hr />
+                <h4>Links</h4>
+                <p>
+                  <a
+                    href="https://www.climateworksaustralia.org/news/land-use-futures-launches-interactive-website-on-australias-land-use/"
+                    target="_blank"
+                    >&#8594 Explore our interactive roadmap.</a
+                  ><br />
+                  <a
+                    href="https://www.climateworksaustralia.org/project/land-use-futures/"
+                    target="_blank"
+                    >&#8594 Read more about Land Use Futures.</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <hr />
+            <div class="row">
+              <div class="col">
+                <button class="cta-button">
+                  Get In Touch
+                </button>
+              </div>
+              </div>
+            <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+          </div>
+          <!--Close article-->
+        </div>
+        <!--End row-->
+      </div>
+      <!--Close container-->
+    <!--Close page-content-->
+    <script src="js/darkmode.js"></script>
+
+  </body>
+</html>
