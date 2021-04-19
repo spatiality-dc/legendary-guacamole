@@ -195,12 +195,11 @@ img {
 }
 
 .stat-captions {
-  /* Roboto Black */
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 5rem;
   color: #c8008f;
-  margin: -0.25em 0 -0.75em 0;
+  /* margin: -0.25em 0 -0.75em 0; */
 }
 
 .stat-captions span {
