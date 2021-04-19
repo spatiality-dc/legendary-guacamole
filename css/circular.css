@@ -198,7 +198,7 @@ img {
   /* Roboto Black */
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 12rem;
+  font-size: 5rem;
   color: #c8008f;
   margin: -0.25em 0 -0.75em 0;
 }
@@ -575,24 +575,21 @@ li:first-of-type {
   /* Segments */
 
   .intro {
-    /* Roboto Light */
     font-size: 1.125rem;
     line-height: 1em;
     text-align: center;
   }
-  .stats {
-    /* Roboto Black */
+  /* .stats {
     font-size: 5rem;
     line-height: 1em;
     text-align: right;
   }
 
   .stat-captions {
-    /* Roboto Black */
     font-size: 1.25rem;
     color: #c8008f;
     top: -0.6em;
-  }
+  } */
 
   .cta {
     /* Roboto Light */
@@ -688,13 +685,11 @@ li:first-of-type {
   /* Segments */
 
   .intro {
-    /* Roboto Light */
     font-size: 1rem;
     line-height: 1em;
   }
 
-  .stats {
-    /* Roboto Black */
+  /* .stats {
     font-size: 5rem;
     line-height: 1em;
     text-align: center;
@@ -702,13 +697,13 @@ li:first-of-type {
   }
 
   .stat-captions {
-    /* Roboto Black */
     font-size: 1.25rem;
     color: #c8008f;
     top: -0.6em;
     text-align: center;
     position: relative;
-  }
+  } */
+
   /* Buttons */
 
   .cta-button {
