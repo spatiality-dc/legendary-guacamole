@@ -151,14 +151,14 @@ img {
 
 .white-container {
   background-color: #fff;
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   box-sizing: border-box;
 }
 
 .grey-container {
   background-color: #f8f8f8;
-  padding-top: 2rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   box-sizing: border-box;
 }
@@ -473,11 +473,12 @@ h3 {
   line-height: 1.4em;
   color: #0a0a0a;
   margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 
-h3:first-of-type {
+/* h3:first-of-type {
   padding-top: 0.25em;
-}
+} */
 h4 {
   /* Roboto Medium */
   font-family: "Roboto", sans-serif;
@@ -492,8 +493,10 @@ p {
   font-size: 1rem;
   line-height: 1.5em;
   color: #0a0a0a;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  /* padding-top: 1.5rem;
+  padding-bottom: 1.5rem; */
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 a {
