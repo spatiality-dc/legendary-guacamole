@@ -23,51 +23,17 @@
   text-align: center;
   height: 90vh;
   width: 100vw;
-  background-image: url("../img/banners/AR2021-Home-hero-M.jpg");
+  background-image: url("../img/AR2021-Home-hero-M.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #0a0a0a;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .center-box {
   margin-top: auto;
   width: 50%;
   padding: 1em;
-}
-
-#navbar {
-  /* Roboto Regular */
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  overflow: hidden;
-  background-color: #fc6228;
-  z-index: 1;
-  top: 0;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 0.875rem 1rem;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  background-color: #fc6228;
-  color: #0a0a0a;
-}
-
-#navbar a.active {
-  background-color: #fc6228;
-  color: #fff;
 }
 
 .nav {
@@ -154,7 +120,7 @@ hr {
 }
 
 .jumbotron {
-  background-image: url("../img/banners/2020.jpg");
+  background-image: url("../img/2020.jpg");
   width: 100%;
   height: 60vh;
   object-fit: cover;
@@ -495,13 +461,11 @@ hr {
   }
 
   p {
-    /* Roboto Regular */
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 
   a {
-    /* Roboto Regular */
     line-height: 1em;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -616,13 +580,11 @@ hr {
   }
 
   p {
-    /* Roboto Regular */
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
 
   a {
-    /* Roboto Regular */
     line-height: 1em;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;

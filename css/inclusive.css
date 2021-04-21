@@ -1,58 +1,18 @@
-.msdi-body {
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
-  font-family: "Roboto", sans-serif;
-  color: #0a0a0a;
-  text-align: left;
-  width: 100%;
-  font-size: 16px;
-  overflow-x: hidden;
-}
-
-/* Body Things */
-
-.page-content {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: #0a0a0a;
-  text-align: left;
-}
-
 .header {
   text-align: center;
   height: 90vh;
   width: 100vw;
-  background-image: url("../img/banners/inclusive-prosperity.jpg");
+  background-image: url("../img/inclusive-prosperity.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #0a0a0a;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.center-box {
-  margin-top: auto;
-  width: 50%;
-  padding: 1em;
-}
-
-#fade {
-  opacity: 0;
-  transition: opacity 3s;
-  -webkit-transition: opacity 3s;
-}
-
 #navbar {
-  /* Roboto Regular */
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   overflow: hidden;
-  /* padding-left: 7em; */
   background-color: #d93f00;
   z-index: 1;
   top: 0;
@@ -77,104 +37,11 @@ img {
   color: #fff;
 }
 
-.nav {
-  list-style-type: none;
-  text-align: right;
-  margin-right: 2em;
-  padding: 0;
-}
-
-.nav li {
-  display: inline-block;
-  padding: 0;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
-.menu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  opacity: 98%;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 1.25rem;
-}
-
-.menu a {
-  padding: 0.5em 0.5em 0.5em 2em;
-  text-decoration: none;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  text-align: end;
-  margin-right: 1em;
-}
-
-.menu h4:hover,
-.menu a:hover {
-  color: #f1f1f1;
-}
-
-.menu .closebtn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-left: 1em;
-}
-
-.menu hr {
-  background-color: #fff;
-  opacity: 50%;
-  max-width: 95%;
-}
-
-.menu h4 {
-  line-height: 0.8em;
-}
-
 /* Class Things */
 
 /* Segments */
 
-.white-container {
-  background-color: #fff;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
-}
-
-.grey-container {
-  background-color: #f8f8f8;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  box-sizing: border-box;
-}
-
-.intro {
-  /* Roboto Light */
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 2rem;
-  line-height: 1.2em;
-  color: #fff;
-  text-align: center;
-}
-
 .story-title {
-  /* Roboto Medium */
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -185,7 +52,6 @@ img {
 }
 
 .cta {
-  /* Roboto Light */
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.375rem;
@@ -195,184 +61,20 @@ img {
 }
 
 .stat-captions {
-  /* Roboto Black */
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 12rem;
+  font-size: 5rem;
   color: #d93f00;
-  margin: -0.25em 0 -0.75em 0;
+  margin: 0.25em 0 0.25em 0;
 }
 
 .stat-captions span {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
-  line-height: 16em;
+  line-height: 2.5em;
+  margin: 2em 2em 2em 0.5em;
   color: #d93f00;
-}
-
-.responsive-youtube {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-
-.responsive-youtube iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.responsive-images {
-  padding-top: 1em;
-  padding-bottom: 2em;
-  overflow: hidden;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Buttons */
-
-.large-button-white {
-  background-color: #fff;
-  border: 1px solid #fff;
-  display: inline-block;
-  cursor: pointer;
-  color: #0a0a0a;
-  font-family: "Roboto", sans-serif;
-  padding: 1.5rem 3.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 2rem;
-}
-.large-button-white:hover {
-  background-color: gray;
-  color: #fff;
-}
-.large-button-white:active {
-  position: relative;
-  top: 1px;
-}
-
-.large-button-black {
-  background-color: #0a0a0a;
-  border: 1px solid #0a0a0a;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  padding: 1.5rem 3.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.large-button-black:hover {
-  background-color: gray;
-  color: #0a0a0a;
-}
-.large-button-black:active {
-  position: relative;
-  top: 1px;
-}
-
-.regular-button-white {
-  background-color: #fff;
-  border: 1px solid #fff;
-  display: inline-block;
-  cursor: pointer;
-  color: #0a0a0a;
-  font-family: "Roboto", sans-serif;
-  padding: 0.75rem 3.5rem;
-  text-decoration: none;
-}
-.regular-button-white:hover {
-  background-color: gray;
-  color: #fff;
-}
-.regular-button-white:active {
-  position: relative;
-  top: 1px;
-}
-
-.regular-button-black {
-  background-color: #0a0a0a;
-  border: 1px solid #0a0a0a;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  padding: 0.75rem 3.5rem;
-  text-decoration: none;
-}
-.regular-button-black:hover {
-  background-color: gray;
-  color: #0a0a0a;
-}
-.regular-button-black:active {
-  position: relative;
-  top: 1px;
-}
-
-.btn-menu,
-.btn-download {
-  position: sticky;
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-}
-.btn-menu {
-  margin: 0 2em 0 0;
-}
-
-.btn-download {
-  margin: 0 2em 0 -2em;
-}
-
-.download-button {
-  position: absolute;
-  top: 0;
-  right: 18em;
-  padding: 1.5rem 3.5rem;
-  background-color: #fff;
-  border: 1px solid #fff;
-  display: inline-block;
-  cursor: pointer;
-  color: #0a0a0a;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-}
-
-.download-button:hover {
-  background-color: gray;
-  color: #0a0a0a;
-}
-.download-button:active {
-  top: 1px;
-}
-
-.menu-button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 25%;
-  padding: 1.5rem 3.5rem;
-  background-color: #0a0a0a;
-  border: 1px solid #0a0a0a;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-}
-
-.menu-button:hover {
-  background-color: gray;
-  color: #0a0a0a;
-}
-.menu-button:active {
-  top: 1px;
 }
 
 .cta-button {
@@ -396,203 +98,13 @@ img {
   top: 1px;
 }
 
-.download-button {
-  position: absolute;
-  top: 0;
-  right: 18em;
-  padding: 1.5rem 3.5rem;
-  background-color: #fff;
-  border: 1px solid #fff;
-  display: inline-block;
-  cursor: pointer;
-  color: #0a0a0a;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-}
-
-.download-button:hover {
-  background-color: gray;
-  color: #0a0a0a;
-}
-.download-button:active {
-  top: 1px;
-}
-
-.menu-button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 25%;
-  padding: 1.5rem 3.5rem;
-  background-color: #0a0a0a;
-  border: 1px solid #0a0a0a;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-}
-
-.menu-button:hover {
-  background-color: gray;
-  color: #0a0a0a;
-}
-.menu-button:active {
-  top: 1px;
-}
-
-/* Font things */
-
-h1 {
-  /* Roboto Black */
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 4.75rem;
-  line-height: 1.2em;
-  color: #fff;
-  margin-top: 15%;
-  text-align: center;
-}
-
-h2 {
-  /* Roboto Black */
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 2rem;
-  line-height: 1.4em;
-  color: #0a0a0a;
-  text-align: left;
-  margin-right: 50px;
-}
-
-h3 {
-  /* Roboto Medium */
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.4em;
-  color: #0a0a0a;
-  margin-bottom: 1rem;
-}
-
-h3:first-of-type {
-  padding-top: 0.25em;
-}
-h4 {
-  /* Roboto Medium */
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  color: #818181;
-}
-
-p {
-  /* Roboto Regular */
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5em;
-  color: #0a0a0a;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-a {
-  /* Roboto Regular */
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  line-height: 1.5em;
-  color: #818181;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-  color: gray;
-}
-
-li {
-  /* Roboto Regular */
-  list-style-type: square;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-li:first-of-type {
-  padding-top: 0rem;
-}
-
 /* @Media Calls */
 
 /* Medium devices (tablets, 768px and up to 992px) */
 @media screen and (max-width: 992px) {
   /* Font things */
 
-  h1 {
-    /* Roboto Black */
-    font-size: 4rem;
-    line-height: 1em;
-  }
-
-  h2 {
-    /* Roboto Black */
-    font-size: 1.75rem;
-    line-height: 1em;
-    margin-bottom: 2rem;
-    margin-right: 3rem;
-  }
-
-  h3 {
-    /* Roboto Medium */
-    font-size: 1.25rem;
-    line-height: 1em;
-  }
-
-  h3:first-of-type {
-    line-height: 1em;
-  }
-
-  p {
-    /* Roboto Regular */
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  a {
-    /* Roboto Regular */
-    line-height: 1em;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  /* Segments */
-
-  .intro {
-    /* Roboto Light */
-    font-size: 1.125rem;
-    line-height: 1em;
-    text-align: center;
-  }
-  .stats {
-    /* Roboto Black */
-    font-size: 7.5rem;
-    line-height: 1em;
-    text-align: right;
-  }
-
-  .stat-captions {
-    /* Roboto Black */
-    font-size: 1.25rem;
-    color: #d93f00;
-    top: -0.6em;
-  }
-
   .cta {
-    /* Roboto Light */
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 1.375rem;
@@ -610,145 +122,5 @@ li:first-of-type {
     position: relative;
     left: 25%;
     width: 50%;
-  }
-
-  .large-button-white {
-    padding: 1.125rem 2.5rem;
-  }
-
-  .large-button-black {
-    padding: 1.125rem 2.5rem;
-  }
-
-  .regular-button-white {
-    padding: 0.75rem 2.5rem;
-  }
-
-  .regular-button-black {
-    padding: 0.75rem 2.5rem;
-  }
-
-  .btn-menu {
-    /* position: sticky; */
-    top: 0;
-    right: 20%;
-    display: inline-block;
-    margin-left: 1px;
-    padding: 0.5rem 1.5rem;
-  }
-
-  .btn-download {
-    top: 0;
-    display: inline-block;
-    margin-left: 0;
-    margin-bottom: 1em;
-    margin-right: 0;
-    padding: 0.5rem 1.5rem;
-  }
-}
-
-/* Small devices (phones) */
-@media screen and (max-width: 600px) {
-  /* Font things */
-
-  h1 {
-    /* Roboto Black */
-    font-size: 2.5rem;
-    line-height: 1em;
-  }
-
-  h2 {
-    /* Roboto Black */
-    font-size: 1.25rem;
-    line-height: 1em;
-  }
-
-  h3 {
-    /* Roboto Medium */
-    font-size: 1rem;
-    line-height: 1em;
-  }
-
-  p {
-    /* Roboto Regular */
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  a {
-    /* Roboto Regular */
-    line-height: 1em;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  /* Segments */
-
-  .intro {
-    /* Roboto Light */
-    font-size: 1rem;
-    line-height: 1em;
-  }
-
-  .stats {
-    /* Roboto Black */
-    font-size: 5rem;
-    line-height: 1em;
-    text-align: center;
-    position: relative;
-  }
-
-  .stat-captions {
-    /* Roboto Black */
-    font-size: 1.25rem;
-    color: #d93f00;
-    top: -0.6em;
-    text-align: center;
-    position: relative;
-  }
-  /* Buttons */
-
-  .cta-button {
-    margin-bottom: 2em;
-    position: relative;
-    left: 15%;
-  }
-
-  .large-button-white {
-    font-size: 0.75rem;
-    padding: 1rem 3rem;
-  }
-
-  .large-button-black {
-    font-size: 0.75rem;
-    padding: 1rem 3rem;
-  }
-  .regular-button-white {
-    font-size: 0.75rem;
-    padding: 0.625rem 3rem;
-  }
-
-  .regular-button-black {
-    font-size: 0.75rem;
-    padding: 0.625rem 3rem;
-  }
-
-  .btn-menu,
-  .btn-download {
-    position: sticky;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    margin-left: 1px;
-    font-size: 0.75rem;
-    padding: 0.5rem 1.5rem;
-  }
-
-  .btn-menu {
-    margin: 2em 2em 0 0;
-  }
-
-  .btn-download {
-    margin: 2em 2em 0 -2em;
   }
 }
