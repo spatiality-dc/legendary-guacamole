@@ -47,33 +47,37 @@ if (sessionStorage.getItem("mode") == "funder") {
   
   //function for storing session data choice
   function funderMode() {
-    document.getElementById("cta").innerHTML = '<div class="cta">Funder mode on!</div>';
+    document.getElementById("ctaOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
     console.log("Funder mode on!");
   }
 
 
 //function for storing session data choice
 function academicMode() {
-    document.getElementById("cta").innerHTML = '<div class="cta">Academic mode on!</div>';
+    document.getElementById("ctaOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
     console.log("Academic mode on");
   } 
 
 //function for storing session data choice
 function practitionerMode() {
-    document.getElementById("cta").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    document.getElementById("ctaOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
     console.log("practitioner mode on");
   }
 
 //function for storing session data choice
 function studentMode() {
-    document.getElementById("cta").innerHTML = '<div class="cta">Student mode on!</div>';
+    document.getElementById("ctaOne").innerHTML = '<div class="cta">Student mode on!</div>';
+    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Student mode on!</div>';
     console.log("Student mode on");
   } 
   
 //function for checkbox when checkbox is not checked
 function exploreMode() {
-  // document.getElementById("cta").remove(...classList); //remove added class from body tag
     sessionStorage.setItem("mode", "explore"); //store a name & value to know that dark mode is off or light mode is on
-    document.getElementById("cta").innerHTML = '<div class="cta">Explore mode on!</div>';
+    document.getElementById("ctaOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
     console.log("Explore mode on");
   } 
