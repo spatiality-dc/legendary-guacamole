@@ -367,6 +367,12 @@ li:first-of-type {
   top: 1px;
 }
 
+.cta-button {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  position: relative;
+}
+
 .cta-button:active {
   position: relative;
   top: 1px;
