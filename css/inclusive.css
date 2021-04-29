@@ -9,34 +9,6 @@
   background-color: #0a0a0a;
 }
 
-#navbar {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  overflow: hidden;
-  background-color: #d93f00;
-  z-index: 1;
-  top: 0;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 0.875rem 1rem 0.875rem 0rem;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  background-color: #d93f00;
-  color: #0a0a0a;
-}
-
-#navbar a.active {
-  background-color: #d93f00;
-  color: #fff;
-}
-
 /* Class Things */
 
 /* Segments */
@@ -76,29 +48,6 @@
   margin: 2em 2em 2em 0.5em;
   color: #d93f00;
 }
-
-/*This section was removed after Sharnie branding review */
-
-/* .cta-button {
-  background-color: #d93f00;
-  border: 1px solid #d93f00;
-  display: inline-block;
-  cursor: pointer;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.875rem;
-  padding: 0.75rem 3.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.cta-button:hover {
-  background-color: gray;
-  color: #d93f00;
-}
-.cta-button:active {
-  position: relative;
-  top: 1px;
-} */
 
 /* @Media Calls */
 
