@@ -32,7 +32,7 @@ function stickyFunction() {
 
 const classList = ["funder-mode", "academic-mode", "practitioner-mode", "student-mode"];
 
-//check storage if funder mode was on or off
+//check storage for which mode was toggled on or off
 if (sessionStorage.getItem("mode") == "funder") {
     funderMode(); //if funder mode was on, run this function
   } else if (sessionStorage.getItem("mode") == "academic") {
@@ -45,29 +45,37 @@ if (sessionStorage.getItem("mode") == "funder") {
     exploreMode(); //else run this function
   }
   
-  //function for storing session data choice
-  function funderMode() {
+//Once Funder selection on homepage is made, run this function
+  //Be sure to rename all cta with unique IDs
+  //Update each unique ID with call to action text, replacing the text Funder mode is on!
+function funderMode() {
     document.getElementById("ctaOne").innerHTML = '<div class="cta">Funder mode on!</div>';
     document.getElementById("ctaTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
     console.log("Funder mode on!");
   }
 
 
-//function for storing session data choice
+//Once Academic selection on homepage is made, run this function
+  //Be sure to rename all cta with unique IDs
+  //Update each unique ID with call to action text, replacing the text Funder mode is on!
 function academicMode() {
     document.getElementById("ctaOne").innerHTML = '<div class="cta">Academic mode on!</div>';
     document.getElementById("ctaTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
     console.log("Academic mode on");
   } 
 
-//function for storing session data choice
+//Once Practitioner selection on homepage is made, run this function
+  //Be sure to rename all cta with unique IDs
+  //Update each unique ID with call to action text, replacing the text Funder mode is on!
 function practitionerMode() {
     document.getElementById("ctaOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
     document.getElementById("ctaTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
     console.log("practitioner mode on");
   }
 
-//function for storing session data choice
+//Once Student selection on homepage is made, run this function
+  //Be sure to rename all cta with unique IDs
+  //Update each unique ID with call to action text, replacing the text Funder mode is on!
 function studentMode() {
     document.getElementById("ctaOne").innerHTML = '<div class="cta">Student mode on!</div>';
     document.getElementById("ctaTwo").innerHTML = '<div class="cta">Student mode on!</div>';
@@ -75,6 +83,8 @@ function studentMode() {
   } 
   
 //function for checkbox when checkbox is not checked
+  //Be sure to rename all cta with unique IDs
+  //Update each unique ID with call to action text, replacing the text Funder mode is on!
 function exploreMode() {
     sessionStorage.setItem("mode", "explore"); //store a name & value to know that dark mode is off or light mode is on
     document.getElementById("ctaOne").innerHTML = '<div class="cta">Explore mode on!</div>';

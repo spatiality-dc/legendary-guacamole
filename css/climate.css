@@ -77,7 +77,9 @@
   color: #008a25;
 }
 
-.cta-button {
+/*This section was removed after Sharnie branding review */
+
+/* .cta-button {
   background-color: #008a25;
   border: 1px solid #008a25;
   display: inline-block;
@@ -96,7 +98,7 @@
 .cta-button:active {
   position: relative;
   top: 1px;
-}
+} */
 
 /* @Media Calls */
 
