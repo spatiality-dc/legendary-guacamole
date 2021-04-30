@@ -33,13 +33,13 @@ function stickyFunction() {
 const classList = ["funder-mode", "academic-mode", "practitioner-mode", "student-mode"];
 
 //check storage for which mode was toggled on or off
-if (sessionStorage.getItem("mode") == "funder") {
+if (localStorage.getItem("mode") == "funder") {
     funderMode(); //if funder mode was on, run this function
-  } else if (sessionStorage.getItem("mode") == "academic") {
+  } else if (localStorage.getItem("mode") == "academic") {
     academicMode(); //if funder mode was on, run this function
-  } else if (sessionStorage.getItem("mode") == "practitioner") {
+  } else if (localStorage.getItem("mode") == "practitioner") {
     practitionerMode(); //if funder mode was on, run this function
-  } else if (sessionStorage.getItem("mode") == "student") {
+  } else if (localStorage.getItem("mode") == "student") {
     studentMode(); //if funder mode was on, run this function
   } else {
     exploreMode(); //else run this function
@@ -135,17 +135,83 @@ function academicMode() {
   //Be sure to rename all cta with unique IDs
   //Update each unique ID with call to action text, replacing the text Funder mode is on!
 function practitionerMode() {
-    document.getElementById("ctaOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
-    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
-    console.log("practitioner mode on");
+  //If the URL contains the word 'capacity', use these CTAs
+if (window.location.pathname.match('capacity')) {
+    document.getElementById("capacityOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    document.getElementById("capacityTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    } 
+    //If the URL contains the word 'circular', use these CTAs
+    else if (window.location.pathname.match('circular')) {
+    document.getElementById("circularOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    document.getElementById("circularTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    }
+    //If the URL contains the word 'cities', use these CTAs
+    else if (window.location.pathname.match('cities')) {
+    document.getElementById("citiesOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    document.getElementById("citiesTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    } 
+    //If the URL contains the word 'climate', use these CTAs
+    else if (window.location.pathname.match('climate')) {
+      document.getElementById("climateOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+      document.getElementById("climateTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    }
+    //If the URL contains the word 'health', use these CTAs
+    else if (window.location.pathname.match('health')) {
+      document.getElementById("healthOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+      document.getElementById("healthTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    }
+    //If the URL contains the word 'inclusive', use these CTAs
+    else if (window.location.pathname.match('inclusive')) {
+      document.getElementById("inclusiveOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+      document.getElementById("inclusiveTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    } 
+    //If the URL contains the word 'leadership', use these CTAs
+    else if (window.location.pathname.match('leadership')) {
+    document.getElementById("leadershipOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+    }
+    console.log("Practitioner mode on");
   }
 
 //Once Student selection on homepage is made, run this function
   //Be sure to rename all cta with unique IDs
   //Update each unique ID with call to action text, replacing the text Funder mode is on!
 function studentMode() {
-    document.getElementById("ctaOne").innerHTML = '<div class="cta">Student mode on!</div>';
-    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+  //If the URL contains the word 'capacity', use these CTAs
+if (window.location.pathname.match('capacity')) {
+    document.getElementById("capacityOne").innerHTML = '<div class="cta">Student mode on!</div>';
+    document.getElementById("capacityTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+    } 
+    //If the URL contains the word 'circular', use these CTAs
+    else if (window.location.pathname.match('circular')) {
+    document.getElementById("circularOne").innerHTML = '<div class="cta">Student mode on!</div>';
+    document.getElementById("circularTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+    }
+    //If the URL contains the word 'cities', use these CTAs
+    else if (window.location.pathname.match('cities')) {
+    document.getElementById("citiesOne").innerHTML = '<div class="cta">Student mode on!</div>';
+    document.getElementById("citiesTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+    } 
+    //If the URL contains the word 'climate', use these CTAs
+    else if (window.location.pathname.match('climate')) {
+      document.getElementById("climateOne").innerHTML = '<div class="cta">Student mode on!</div>';
+      document.getElementById("climateTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+    }
+    //If the URL contains the word 'health', use these CTAs
+    else if (window.location.pathname.match('health')) {
+      document.getElementById("healthOne").innerHTML = '<div class="cta">Student mode on!</div>';
+      document.getElementById("healthTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+    }
+    //If the URL contains the word 'inclusive', use these CTAs
+    else if (window.location.pathname.match('inclusive')) {
+      document.getElementById("inclusiveOne").innerHTML = '<div class="cta">Student mode on!</div>';
+      document.getElementById("inclusiveTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+    } 
+    //If the URL contains the word 'leadership', use these CTAs
+    else if (window.location.pathname.match('leadership')) {
+    document.getElementById("leadershipOne").innerHTML = '<div class="cta">Student mode on!</div>';
+    document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+    }
     console.log("Student mode on");
   } 
   
@@ -153,8 +219,40 @@ function studentMode() {
   //Be sure to rename all cta with unique IDs
   //Update each unique ID with call to action text, replacing the text Funder mode is on!
 function exploreMode() {
-    sessionStorage.setItem("mode", "explore"); //store a name & value to know that dark mode is off or light mode is on
-    document.getElementById("ctaOne").innerHTML = '<div class="cta">Explore mode on!</div>';
-    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+  //If the URL contains the word 'capacity', use these CTAs
+if (window.location.pathname.match('capacity')) {
+    document.getElementById("capacityOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+    document.getElementById("capacityTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+    } 
+    //If the URL contains the word 'circular', use these CTAs
+    else if (window.location.pathname.match('circular')) {
+    document.getElementById("circularOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+    document.getElementById("circularTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+    }
+    //If the URL contains the word 'cities', use these CTAs
+    else if (window.location.pathname.match('cities')) {
+    document.getElementById("citiesOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+    document.getElementById("citiesTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+    } 
+    //If the URL contains the word 'climate', use these CTAs
+    else if (window.location.pathname.match('climate')) {
+      document.getElementById("climateOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+      document.getElementById("climateTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+    }
+    //If the URL contains the word 'health', use these CTAs
+    else if (window.location.pathname.match('health')) {
+      document.getElementById("healthOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+      document.getElementById("healthTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+    }
+    //If the URL contains the word 'inclusive', use these CTAs
+    else if (window.location.pathname.match('inclusive')) {
+      document.getElementById("inclusiveOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+      document.getElementById("inclusiveTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+    } 
+    //If the URL contains the word 'leadership', use these CTAs
+    else if (window.location.pathname.match('leadership')) {
+    document.getElementById("leadershipOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+    document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+    }
     console.log("Explore mode on");
   } 

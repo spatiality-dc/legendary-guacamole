@@ -31,37 +31,30 @@ explore.addEventListener("click", exploreTheme); // Adding event to call functio
 
 
 
+
+
+
 // //check storage if funder mode was on or off
-// function checkTheme() {
+function checkTheme() {
 
-// if (sessionStorage.getItem("mode") == "funder") {
-//     funderTheme(); //if funder mode was on, run this function
-//   } else if (sessionStorage.getItem("mode") == "academic") {
-//     academicTheme(); //if funder mode was on, run this function
-//   } else if (sessionStorage.getItem("mode") == "practitioner") {
-//     practitionerTheme(); //if funder mode was on, run this function
-//   } else if (sessionStorage.getItem("mode") == "student") {
-//     studentTheme(); //if funder mode was on, run this function
-//   } else {
-//     exploreTheme(); //else run this function
-//   }
-
-// }
-
-
-// Checking to see if the buttons work
-// function funderTheme() { 
-//     console.log("funderTheme active");
-//     document.getElementById("modeExplainer").innerHTML = '<p>Funder mode on!<p>';
-//     document.getElementById("Funder").className = "mode-active";
-//     sessionStorage.setItem("mode", "funder");
-// };
+    if (localStorage.getItem("mode") == "funder") {
+        funderTheme(); //if funder mode was on, run this function
+      } else if (localStorage.getItem("mode") == "academic") {
+        academicTheme(); //if academic mode was on, run this function
+      } else if (localStorage.getItem("mode") == "practitioner") {
+        practitionerTheme(); //if practitioner mode was on, run this function
+      } else if (localStorage.getItem("mode") == "student") {
+        studentTheme(); //if student mode was on, run this function
+      } else {
+        exploreTheme(); //else run this function
+      }
+    
+    }
 
 
 function funderTheme() { 
     console.log("funderTheme active");
-    document.getElementById("Funder").className = "mode-active";
-    sessionStorage.setItem("mode", "funder");
+    localStorage.setItem("mode", "funder");
     document.getElementById("Academic").className = "regular-button-blue";
     document.getElementById("Practitioner").className = "regular-button-blue";
     document.getElementById("Student").className = "regular-button-blue";
@@ -72,7 +65,7 @@ function funderTheme() {
 function academicTheme() { 
     console.log("academicTheme active");
     document.getElementById("Academic").className = "mode-active";
-    sessionStorage.setItem("mode", "academic");
+    localStorage.setItem("mode", "academic");
     document.getElementById("Funder").className = "regular-button-blue";
     document.getElementById("Practitioner").className = "regular-button-blue";
     document.getElementById("Student").className = "regular-button-blue";
@@ -83,7 +76,7 @@ function academicTheme() {
 function practitionerTheme() { 
     console.log("practitionerTheme active"); 
     document.getElementById("Practitioner").className = "mode-active";
-    sessionStorage.setItem("mode", "practitioner");
+    localStorage.setItem("mode", "practitioner");
     document.getElementById("Funder").className = "regular-button-blue";
     document.getElementById("Academic").className = "regular-button-blue";
     document.getElementById("Student").className = "regular-button-blue";
@@ -94,7 +87,7 @@ function practitionerTheme() {
 function studentTheme() { 
     console.log("studentTheme active");  
     document.getElementById("Student").className = "mode-active";
-    sessionStorage.setItem("mode", "student");
+    localStorage.setItem("mode", "student");
     document.getElementById("Funder").className = "regular-button-blue";
     document.getElementById("Academic").className = "regular-button-blue";
     document.getElementById("Practitioner").className = "regular-button-blue";
@@ -105,7 +98,7 @@ function studentTheme() {
 function exploreTheme() { 
     console.log("exploreTheme active");  
     document.getElementById("Explore").className = "mode-active";
-    sessionStorage.setItem("mode", "explore");
+    localStorage.setItem("mode", "explore");
     document.getElementById("Funder").className = "regular-button-blue";
     document.getElementById("Academic").className = "regular-button-blue";
     document.getElementById("Practitioner").className = "regular-button-blue";

@@ -393,7 +393,6 @@ hr {
 }
 .regular-button-blue:active {
   background-color: #006dae;
-  border: 1px solid #006dae;
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -404,7 +403,6 @@ hr {
 
 .mode-active {
   background-color: #006dae;
-  border: 1px solid #006dae;
   display: inline-block;
   cursor: pointer;
   color: #fff;
