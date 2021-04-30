@@ -48,9 +48,43 @@ if (sessionStorage.getItem("mode") == "funder") {
 //Once Funder selection on homepage is made, run this function
   //Be sure to rename all cta with unique IDs
   //Update each unique ID with call to action text, replacing the text Funder mode is on!
-function funderMode() {
-    document.getElementById("ctaOne").innerHTML = '<div class="cta">Funder mode on!</div>';
-    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+
+  function funderMode() {
+    //If the URL contains the word 'capacity', use these CTAs
+  if (window.location.pathname.match('capacity')) {
+    document.getElementById("capacityOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+    document.getElementById("capacityTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+    } 
+    //If the URL contains the word 'circular', use these CTAs
+    else if (window.location.pathname.match('circular')) {
+    document.getElementById("circularOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+    document.getElementById("circularTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+    }
+    //If the URL contains the word 'cities', use these CTAs
+    else if (window.location.pathname.match('cities')) {
+    document.getElementById("citiesOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+    document.getElementById("citiesTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+    } 
+    //If the URL contains the word 'climate', use these CTAs
+    else if (window.location.pathname.match('climate')) {
+      document.getElementById("climateOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+      document.getElementById("climateTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+    }
+    //If the URL contains the word 'health', use these CTAs
+    else if (window.location.pathname.match('health')) {
+      document.getElementById("healthOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+      document.getElementById("healthTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+    }
+    //If the URL contains the word 'inclusive', use these CTAs
+    else if (window.location.pathname.match('inclusive')) {
+      document.getElementById("inclusiveOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+      document.getElementById("inclusiveTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+    } 
+    //If the URL contains the word 'leadership', use these CTAs
+    else if (window.location.pathname.match('leadership')) {
+    document.getElementById("leadershipOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+    document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+    }
     console.log("Funder mode on!");
   }
 
@@ -59,8 +93,41 @@ function funderMode() {
   //Be sure to rename all cta with unique IDs
   //Update each unique ID with call to action text, replacing the text Funder mode is on!
 function academicMode() {
-    document.getElementById("ctaOne").innerHTML = '<div class="cta">Academic mode on!</div>';
-    document.getElementById("ctaTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    //If the URL contains the word 'capacity', use these CTAs
+  if (window.location.pathname.match('capacity')) {
+    document.getElementById("capacityOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+    document.getElementById("capacityTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    } 
+    //If the URL contains the word 'circular', use these CTAs
+    else if (window.location.pathname.match('circular')) {
+    document.getElementById("circularOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+    document.getElementById("circularTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    }
+    //If the URL contains the word 'cities', use these CTAs
+    else if (window.location.pathname.match('cities')) {
+    document.getElementById("citiesOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+    document.getElementById("citiesTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    } 
+    //If the URL contains the word 'climate', use these CTAs
+    else if (window.location.pathname.match('climate')) {
+      document.getElementById("climateOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+      document.getElementById("climateTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    }
+    //If the URL contains the word 'health', use these CTAs
+    else if (window.location.pathname.match('health')) {
+      document.getElementById("healthOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+      document.getElementById("healthTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    }
+    //If the URL contains the word 'inclusive', use these CTAs
+    else if (window.location.pathname.match('inclusive')) {
+      document.getElementById("inclusiveOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+      document.getElementById("inclusiveTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    } 
+    //If the URL contains the word 'leadership', use these CTAs
+    else if (window.location.pathname.match('leadership')) {
+    document.getElementById("leadershipOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+    document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    }
     console.log("Academic mode on");
   } 
 
