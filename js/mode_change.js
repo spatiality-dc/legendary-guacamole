@@ -85,6 +85,11 @@ if (localStorage.getItem("mode") == "funder") {
     document.getElementById("leadershipOne").innerHTML = '<div class="cta">Funder mode on!</div>';
     document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
     }
+    //If the URL contains the word 'unprecedented', use these CTAs
+    else if (window.location.pathname.match('unprecedented')) {
+      document.getElementById("unprecedentedOne").innerHTML = '<div class="cta">Funder mode on!</div>';
+      document.getElementById("unprecedentedTwo").innerHTML = '<div class="cta">Funder mode on!</div>';
+    }
     console.log("Funder mode on!");
   }
 
@@ -128,6 +133,12 @@ function academicMode() {
     document.getElementById("leadershipOne").innerHTML = '<div class="cta">Academic mode on!</div>';
     document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
     }
+    //If the URL contains the word 'unprecedented', use these CTAs
+    else if (window.location.pathname.match('unprecedented')) {
+      document.getElementById("unprecedentedOne").innerHTML = '<div class="cta">Academic mode on!</div>';
+      document.getElementById("unprecedentedTwo").innerHTML = '<div class="cta">Academic mode on!</div>';
+    }
+
     console.log("Academic mode on");
   } 
 
@@ -170,6 +181,12 @@ if (window.location.pathname.match('capacity')) {
     document.getElementById("leadershipOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
     document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
     }
+    //If the URL contains the word 'unprecedented', use these CTAs
+    else if (window.location.pathname.match('unprecedented')) {
+      document.getElementById("unprecedentedOne").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+      document.getElementById("unprecedentedTwo").innerHTML = '<div class="cta">Practitioner mode on!</div>';
+      }
+
     console.log("Practitioner mode on");
   }
 
@@ -212,6 +229,12 @@ if (window.location.pathname.match('capacity')) {
     document.getElementById("leadershipOne").innerHTML = '<div class="cta">Student mode on!</div>';
     document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Student mode on!</div>';
     }
+    //If the URL contains the word 'unprecedented', use these CTAs
+    else if (window.location.pathname.match('unprecedented')) {
+      document.getElementById("unprecedentedOne").innerHTML = '<div class="cta">Student mode on!</div>';
+      document.getElementById("unprecedentedTwo").innerHTML = '<div class="cta">Student mode on!</div>';
+      }
+
     console.log("Student mode on");
   } 
   
@@ -254,5 +277,11 @@ if (window.location.pathname.match('capacity')) {
     document.getElementById("leadershipOne").innerHTML = '<div class="cta">Explore mode on!</div>';
     document.getElementById("leadershipTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
     }
+    //If the URL contains the word 'unprecedented', use these CTAs
+    else if (window.location.pathname.match('unprecedented')) {
+      document.getElementById("unprecedentedOne").innerHTML = '<div class="cta">Explore mode on!</div>';
+      document.getElementById("unprecedentedTwo").innerHTML = '<div class="cta">Explore mode on!</div>';
+      }
+
     console.log("Explore mode on");
   } 
